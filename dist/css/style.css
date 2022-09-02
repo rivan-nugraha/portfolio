@@ -250,8 +250,8 @@
 }
 
 .wrap p{
-    width: max-content;
     height: max-content;
+    font-size: 12px;
 }
 
 .gh-access{
@@ -297,5 +297,10 @@
         width: auto;
         display: flex;
         justify-content: space-around;
+    }
+
+    .wrap p{
+        height: max-content;
+        font-size: 18px;
     }
 }
