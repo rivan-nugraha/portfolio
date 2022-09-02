@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
     <!--CSS Styling-->
     <link rel="stylesheet" href="./dist/css/style.css">
     
@@ -24,22 +27,31 @@
 <body>
     <!--JavaScript-->
     <script src="./dist/js/effect.js"></script>
+
+    <!--Header-->
     <div id="hd" class="header">
         <ul class="navi-bar">
             <a href="" class="navi">ABOUT</a>
+            <a href="" class="navi">MY CREATION</a>
             <a href="" class="navi">SKILLS</a>
             <a href="" class="navi">MY GITHUB</a>
         </ul>
     </div>
+    
+    <!--Hero-->
     <div class="hero">
         <div class="text-box">
             <h4 style="font-weight: lighter;">Hi, I'Am</h4>
             <h2 style="margin: 10px;">IRVAN NUGRAHA</h2>
-            <h4 style="font-weight: lighter;">I'm a Indonesian Back-End Developer who loves making something valueable.</h4>
+            <h4 style="font-weight: lighter;">I'm a Indonesian who loves making something valueable.</h4>
         </div>
     </div>
+
+    <!--Content-->
     <div class="wrapper">
         <div id="ct" class="content-wrapper slideDown">
+            
+            <!--About-->
             <center><h2 class="title">A B O U T</h2></center>
             <div class="content-box">
                 <div class="box bio">
@@ -57,32 +69,65 @@
                     </ul>
                 </div>
             </div>
-            
+
+            <!--Creation-->
             <center><h2 class="title">M Y - C R E A T I O N</h2></center>
+            <center><h4>- Photography -</h4></center>
             <div class="content-box">
-                <div class="box">
-                    <center>
-                        <h5>Photography</h5>
-                    </center>
-                </div>
-                <div class="box">
-                    <center>
-                        <h5>Project</h5>
-                    </center>
-                </div>
-                <div class="box">
-                    <center>
-                        <h5>Other</h5>
-                    </center>
+                <div class="card-content">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./dist/img/1.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h3>The Devil Inside of Me</h3>
+                            <p>Editing Application : <br>-Adobe Photoshop<br>-Adobe Lightroom<br> Camera : Canon 550D</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"><img src="./dist/img/3.png" alt=""></div>
+                        <div class="card-info">
+                            <h3>Triangle Neon</h3>
+                            <p>Editing Application : <br>-Adobe Photoshop<br>-Adobe Lightroom <br> Camera : Canon 550D</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"><img src="./dist/img/4.png" alt=""></div>
+                        <div class="card-info">
+                            <h3>Neon Cloth</h3>
+                            <p>Editing Application : <br>-Adobe Photoshop<br>-Adobe Lightroom <br> Camera : Nikon D3000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"><img src="./dist/img/6.png" alt=""></div>
+                        <div class="card-info">
+                            <h3>Don't Forget Use Mask</h3>
+                            <p>Editing Application : <br>-Adobe Photoshop<br>-Adobe Lightroom <br> Camera : Nikon D3000</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
+            <center><h4>- Project -</h4></center>
+            <div class="content-box">
+
+            </div>
+            <center><h4>- Other -</h4></center>
+            <div class="content-box">
+
+            </div>
+
+            <!--Skills-->
             <center><h2 class="title">S K I L L S</h2></center>
             <div class="content-box">
                 <div class="box">
+                    <center><h3>- Hardskill -</h3></center>
+                </div>
+                <div class="box">
+                    <center><h3>- Softskill -</h3></center>
                 </div>
             </div>
             
+            <!--Github-->
             <center><h2 class="title">G I T H U B</h2></center>
             <div class="end-box">
                 <div class="gh-box end">
@@ -102,7 +147,8 @@
                 </div>
             </div>
         </div>
-        <div class="footer"></div>
     </div>
+    <!--Footer-->
+    <div class="footer"></div>
 </body>
 </html>

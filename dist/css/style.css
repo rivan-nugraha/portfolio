@@ -165,6 +165,7 @@
     padding: 20px 20px;
     display: block;
     background-color: #F1E0CE;
+    margin: 10px;
 }
 
 .photo{
@@ -191,7 +192,7 @@
 .sm-logo a{
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 27px;
     margin: 10px;
     height: auto;
     width: auto;
@@ -303,4 +304,54 @@
         height: max-content;
         font-size: 18px;
     }
+}
+
+.card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.card{
+    position: relative;
+    background: #fff;
+    max-width: 240px;
+    width: 240px;
+    height: auto;
+    margin: 25px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-image{
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-image img{
+    max-width: 100%;
+    width: auto;
+    height: 300px;
+    margin: 5px;
+}
+
+.card-info{
+    position: relative;
+    color: black;
+    padding: 10px 20px 20px;
+}
+
+.card-info h3{
+    font-size: 1.3em;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.card-info p{
+    font-size: 1em;
+    margin-bottom: 5px;
 }
