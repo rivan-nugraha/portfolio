@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+img{
+    pointer-events: none;
+}
+
 .slideUp{
     animation-name: slideUp;
     animation-name: slideUp;
@@ -59,6 +63,14 @@
     height: 40px;
 }
 
+.header.h-res{
+    background: transparent;
+    position: fixed;
+    padding: 20px 0px;
+    width: 100%;
+    height: 500px;
+}
+
 .scroll{
     opacity: 0%;
 }
@@ -72,14 +84,28 @@
 }
 
 .navi-bar{
-    width: max-content;
+    width: 100%;
     margin: auto;
     position: relative;
     padding: 10px 0px;
 }
 
+.navi-bar.nav-res{
+    display: block;
+    padding: 20;
+    height: 100%;
+}
+
+.icon{
+    text-decoration: none;
+    font-size: 16;
+    color: white;
+    display: none;
+}
+
 .navi{
-    margin: 20px;
+    margin: 100px;
+    height: 20px;
     font-size: 16px;
     padding: 10px 10px;
     border-radius: 20px;
@@ -144,6 +170,15 @@
 }
 
 @media screen and (min-width: 720px) {
+    .navi{
+        margin: 20px;
+        font-size: 16px;
+        padding: 10px 10px;
+        border-radius: 20px;
+        background-size: cover;
+        color: white;
+    }
+
     .content-box{
         width: 720px;
         display: flex;
@@ -212,10 +247,11 @@
 }
 
 .wr{
-    width: 240px;
+    width: auto;
     height: auto;
     margin: auto;
     align-items: center;
+    position: relative;
 }
 
 .gh-box.end{
@@ -245,14 +281,17 @@
 }
 
 .wrap{
-    width: auto;
+    width: max-content;
     height: auto;
-    padding: 0px 70px;
+    position: relative;
+    left: 10px;
 }
 
 .wrap p{
-    height: max-content;
+    width: 160px;
+    height: auto;
     font-size: 12px;
+    margin: 0px;
 }
 
 .gh-access{
@@ -267,6 +306,11 @@
     color: #726c97;
     text-decoration: none;
     margin: 0px;
+}
+
+.wr{
+    position: relative;
+    bottom: 40px;
 }
 
 @media screen and (min-width: 720px) {
@@ -298,9 +342,17 @@
         width: auto;
         display: flex;
         justify-content: space-around;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .wrap{
+        width: max-content;
+        left: 40px;
     }
 
     .wrap p{
+        width: auto;
         height: max-content;
         font-size: 18px;
     }
@@ -317,6 +369,7 @@
 @media screen and (max-width:720px){
     .card-content{
         display: inline-block;
+        margin: 0px;
     }
 }
 
