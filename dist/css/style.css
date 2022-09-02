@@ -1,0 +1,301 @@
+*{
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.slideUp{
+    animation-name: slideUp;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.slideDown{
+    animation-name: slideDown;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-duration: 1s;
+    visibility: collapse;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+.wrapper{
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: #FFFFFF;
+}
+
+.header{
+    background: transparent;
+    position: fixed;
+    padding: 20px 0px;
+    width: 100%;
+    height: 40px;
+}
+
+.scroll{
+    opacity: 0%;
+}
+
+.header:hover{
+    opacity: 100%;
+    color: inherit;
+    background-color: #474554 !important;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.navi-bar{
+    width: max-content;
+    margin: auto;
+    position: relative;
+    padding: 10px 0px;
+}
+
+.navi{
+    margin: 20px;
+    font-size: 16px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-size: cover;
+    color: white;
+}
+
+.navi{
+    text-decoration: none;
+}
+
+.navi:hover{
+    background: white;
+    transition: background-color .5s;
+    transition-timing-function: ease-in-out;
+    color: black;
+}
+
+.hero{
+    background-color: #474554;
+    height: 720px;
+    width: 100%;
+    color: #F8EEF7;
+}
+
+.text-box{
+    font-size: 15px;
+    position: relative;
+    top: 240px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.hero h4, .hero h2{
+    color: #E3E0F3;
+    text-align: center;
+}
+
+.content-wrapper{
+    width: auto;
+    height: auto;
+    transition: 1s, ease-in-out;
+}
+
+.title{
+    margin: 20px;
+}
+
+.content-box{
+    width: max-content;
+    margin: auto;
+    display: block;
+    justify-content: space-between;
+}
+
+.myself{
+    width: 185px;
+    height: auto;
+    align-items: center;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 720px) {
+    .content-box{
+        width: 720px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box{
+        height: auto;
+        border-radius: 20px;
+        width: 185px;
+        padding: 20px 20px;
+    }
+}
+
+.box{
+    height: auto;
+    border-radius: 20px;
+    width: 185px;
+    padding: 20px 20px;
+    display: block;
+    background-color: #F1E0CE;
+}
+
+.photo{
+    background: transparent;
+}
+
+.box.bio p{
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.box.socmed{
+    color: white;
+    background-color: #726c97;
+}
+
+.sm-logo{
+    width: auto;
+    height: auto;
+    padding: 10px 21px;
+}
+
+.sm-logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    height: auto;
+    width: auto;
+}
+
+.end-box{
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.end{
+    padding: 0px;
+    width: 100%;
+    height: 70px;
+    padding: 70px 0px;
+}
+
+.wr{
+    width: 240px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+}
+
+.gh-box.end{
+    background-color: #F1E0CE;
+}
+
+.gh-box p{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+}
+
+.gh-logo{
+    height: auto;
+    width: auto;
+}
+
+.gh-logo img{
+    width: 90px;
+    height: auto;
+}
+
+.gh-btn{
+    background-color: #ACA7CB;
+    color: #F1E0CE;
+    align-items: center;
+}
+
+.wrap{
+    width: auto;
+    height: auto;
+    padding: 0px 70px;
+}
+
+.wrap p{
+    width: max-content;
+    height: max-content;
+}
+
+.gh-access{
+    font-weight: bold;
+    display: block;
+    width: 115px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 25px;
+    height: 25px;
+    background-color: #F1E0CE;
+    color: #726c97;
+    text-decoration: none;
+    margin: 0px;
+}
+
+@media screen and (min-width: 720px) {
+    .gh-box p{
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .gh-logo img{
+        width: 70px;
+    }
+
+    .end-box{
+        width: auto;
+        height: auto;
+        margin: auto;
+        align-items: center;
+        display: flex;
+    }
+
+    .end{
+        padding: 70px 0px;
+        width: 100%;
+        height: 70px;
+        align-items: center;
+    }
+
+    .wr{
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+}
