@@ -314,6 +314,12 @@
     margin: 30px;
 }
 
+@media screen and (max-width:720px){
+    .card-content{
+        display: inline-block;
+    }
+}
+
 .card{
     position: relative;
     background: #fff;
